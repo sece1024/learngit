@@ -1,16 +1,28 @@
 # learn-git
 
+***
+
+## Add
+
+`git add readme.md`
+
+---
+
+## Commit
+
+`git commit -m "What you want write."`
+
 ## Diff
 
 **查看修改内容**
 
 `git diff readme.md`
 
----
-
 **查看工作区和版本库里面最新版本的区别**
 
 `git diff HEAD -- readme.md`
+
+---
 
 
 
@@ -24,9 +36,33 @@
 >
 > 可以试试加上`--pretty=oneline`参数
 
+**带参数查看日志**
+
+`git log --graph --pretty=oneline --abbrev-commit`
+
+> pretty:漂亮的
+>
+> abbrev：缩写（abbreviation）
+
 **查看历史版本**
 
 `git reflog`
+
+---
+
+
+
+**退回**
+
+`git reset --hard HEAD^`
+
+*在cmd命令中，`^`是转义字符，所以要用`HEAD^^`或者`HEAD~1`*
+
+*`--hard` 后也可以接版本ID号（只需要输入前几位数）*
+
+---
+
+
 
 ## branch
 
