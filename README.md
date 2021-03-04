@@ -125,3 +125,17 @@ $ git config --global user.email "email@example.com"
 
 
 
+## Origin
+
+
+
+**查看远程库**
+
+`git remote`
+
+**查看远程库详细信息**
+
+`git remote -v`
+
+---
+
