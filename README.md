@@ -139,3 +139,12 @@ $ git config --global user.email "email@example.com"
 
 ---
 
+
+
+### Push & Pull
+
+`git pull`
+
+
+
+`git push`
