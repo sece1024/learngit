@@ -73,6 +73,8 @@ $ git config --global user.email "email@example.com"
 
 ## branch
 
+[git创建新分支 - 明明一颗大白菜 - 博客园 (cnblogs.com)](https://www.cnblogs.com/mmykdbc/p/9076063.html)
+
 ### Create a new branch
 
 *Create a new branch 'dev'.*
@@ -89,6 +91,10 @@ $ git config --global user.email "email@example.com"
 
 `git branch`
 
+查看所有分支
+
+`git branch -a`
+
 ### Return to master
 
 `git checkout master`
@@ -103,7 +109,17 @@ $ git config --global user.email "email@example.com"
 
 *删除前请回到master分支*
 
+删除本地已合并分支：
+
 `git branch -d dev`
+
+使用参数`-D`删除本地未合并分支
+
+
+
+**删除服务器远端的分支：**
+
+`git push origin -delete dev`
 
 ### Switch
 
@@ -121,7 +137,11 @@ $ git config --global user.email "email@example.com"
 
 **撤销修改可用**	`git checkout -- <file>`
 
+### push/pull to/from origin
 
+`git push origin dev` | dev是分支名
+
+`git pull origin dev`
 
 
 
@@ -147,4 +167,16 @@ $ git config --global user.email "email@example.com"
 
 
 
-`git push`
+`git push` -d 
+
+
+
+
+
+## Clone
+
+* clone包含子模块的代码仓库
+
+` git clone --recurse-submodules https://github.com/xxxxx.git`
+
+git clone --recurse-submodules https://github.com.cnpmjs.org/Ewenwan/ShiYanLou.git
