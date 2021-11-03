@@ -180,3 +180,7 @@ $ git config --global user.email "email@example.com"
 ` git clone --recurse-submodules https://github.com/xxxxx.git`
 
 git clone --recurse-submodules https://github.com.cnpmjs.org/Ewenwan/ShiYanLou.git
+
+# server
+
+[云服务器git（详解在阿里云上搭建自己的git服务器） - 开心学习 (studyofnet.com)](http://studyofnet.com/news/2867.html)
